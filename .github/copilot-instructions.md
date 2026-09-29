@@ -1,0 +1,18 @@
+# Copilot instructions
+
+This repository is `ticketmaster-organizer`, part of **ticketmaster**, which is managed in Nimbupani Workspace.
+
+## Before you start
+
+- Read `.nimbupani/context.md`: what the project is, what this repo is for, the other repos in the product, and the decisions already made. Treat accepted decisions as constraints. If a change would contradict one, say so instead of quietly working around it.
+- Follow `.nimbupani/conventions.md`.
+- `.nimbupani/workspace.yml` lists the sibling repos. A change to an interface another repo depends on (HTTP routes, proto messages, events, shared schemas) affects that repo too, so call it out.
+
+## Record decisions
+
+When you and the developer settle something the rest of the team would need to know (choosing a library, database, protocol, API or data shape, or ruling an approach out):
+
+1. Write it to `.nimbupani/decisions/YYYY-MM-DD-short-slug.md` in the format described in `.nimbupani/decisions/README.md`.
+2. Commit it together with the code change it belongs to.
+
+One decision per file. Don't record routine implementation details. Don't edit `.nimbupani/context.md`; Nimbupani regenerates it.

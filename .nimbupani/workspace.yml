@@ -1,0 +1,34 @@
+# Nimbupani Workspace manifest. Generated at repo creation; safe to commit.
+version: 1
+project:
+  name: "ticketmaster"
+  description: "Event discovery and ticketing platform for fans, artists, venues, and organizers. It lets users search events, choose seats, purchase tickets, and access mobile entry passes. Verified resale and organizer tools set it apart from basic ticketing services."
+  stack:
+    - "React"
+    - "React Native"
+    - "TypeScript"
+    - "Node.js"
+    - "GraphQL"
+    - "PostgreSQL"
+    - "Redis"
+    - "AWS"
+    - "Stripe"
+    - "Kafka"
+repo:
+  name: "ticketmaster-organizer"
+  purpose: "Dashboard for event organizers and venues."
+siblings:
+  - name: "ticketmaster-web"
+    purpose: "Web app for fans to discover events and buy tickets."
+  - name: "ticketmaster-mobile"
+    purpose: "Mobile app for fans to access digital tickets and buy on the go."
+  - name: "ticketmaster-catalog"
+    purpose: "Service that owns event, venue, and artist data."
+  - name: "ticketmaster-orders"
+    purpose: "Service that owns carts, payments, and orders."
+  - name: "ticketmaster-ticketing"
+    purpose: "Service that issues and validates digital tickets."
+context:
+  file: "context.md"
+  conventions: "conventions.md"
+  decisions_dir: "decisions/"
